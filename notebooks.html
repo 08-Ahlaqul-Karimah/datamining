@@ -52,7 +52,7 @@ const thebe_selector_output = ".output, .cell_output"
     <script async="async" src="_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Tugas 2" href="notebooks2.html" />
+    <link rel="next" title="Tugas 2 Deskritisasi" href="notebooks2.html" />
     <link rel="prev" title="Welcome to your Jupyter Book" href="intro.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
@@ -121,7 +121,7 @@ const thebe_selector_output = ".output, .cell_output"
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="notebooks2.html">
-   Tugas 2
+   Tugas 2 Deskritisasi
   </a>
  </li>
  <li class="toctree-l1">
@@ -354,31 +354,33 @@ title="Print to PDF"
   <a class="reference internal nav-link" href="#dismilarity">
    Dismilarity
   </a>
- </li>
- <li class="toc-h1 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#import-modul">
-   Import Modul
-  </a>
- </li>
- <li class="toc-h1 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#get-dataset">
-   Get Dataset
-  </a>
- </li>
- <li class="toc-h1 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#mencari-dismilarity-data-nominal">
-   Mencari Dismilarity data nominal
-  </a>
- </li>
- <li class="toc-h1 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#menghitung-jarak-data-numeric-dengan-cara-euclidean">
-   Menghitung jarak data Numeric dengan cara Euclidean
-  </a>
- </li>
- <li class="toc-h1 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#manhattan-distance">
-   Manhattan distance
-  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#import-modul">
+     Import Modul
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#get-dataset">
+     Get Dataset
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#mencari-dismilarity-data-nominal">
+     Mencari Dismilarity data nominal
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#menghitung-jarak-data-numeric-dengan-cara-euclidean">
+     Menghitung jarak data Numeric dengan cara Euclidean
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#manhattan-distance">
+     Manhattan distance
+    </a>
+   </li>
+  </ul>
  </li>
 </ul>
 
@@ -408,31 +410,33 @@ title="Print to PDF"
   <a class="reference internal nav-link" href="#dismilarity">
    Dismilarity
   </a>
- </li>
- <li class="toc-h1 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#import-modul">
-   Import Modul
-  </a>
- </li>
- <li class="toc-h1 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#get-dataset">
-   Get Dataset
-  </a>
- </li>
- <li class="toc-h1 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#mencari-dismilarity-data-nominal">
-   Mencari Dismilarity data nominal
-  </a>
- </li>
- <li class="toc-h1 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#menghitung-jarak-data-numeric-dengan-cara-euclidean">
-   Menghitung jarak data Numeric dengan cara Euclidean
-  </a>
- </li>
- <li class="toc-h1 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#manhattan-distance">
-   Manhattan distance
-  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#import-modul">
+     Import Modul
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#get-dataset">
+     Get Dataset
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#mencari-dismilarity-data-nominal">
+     Mencari Dismilarity data nominal
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#menghitung-jarak-data-numeric-dengan-cara-euclidean">
+     Menghitung jarak data Numeric dengan cara Euclidean
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#manhattan-distance">
+     Manhattan distance
+    </a>
+   </li>
+  </ul>
  </li>
 </ul>
 
@@ -456,9 +460,8 @@ d(1,2), d(1,3), d(1,4) dari data tersebut</p></li>
 <section class="tex2jax_ignore mathjax_ignore" id="dismilarity">
 <h1>Dismilarity<a class="headerlink" href="#dismilarity" title="Permalink to this headline">#</a></h1>
 <p>Dalam peambangan data yang pengaplikasian yang sering digunakan adalah clustering. pada teknik ini perlu untuk menemukan seberapa mirip atau tidaknya data. Salah satu cara yaitu dengan menggunakan Dismilarity</p>
-</section>
-<section class="tex2jax_ignore mathjax_ignore" id="import-modul">
-<h1>Import Modul<a class="headerlink" href="#import-modul" title="Permalink to this headline">#</a></h1>
+<section id="import-modul">
+<h2>Import Modul<a class="headerlink" href="#import-modul" title="Permalink to this headline">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
@@ -469,8 +472,8 @@ d(1,2), d(1,3), d(1,4) dari data tersebut</p></li>
 </div>
 </div>
 </section>
-<section class="tex2jax_ignore mathjax_ignore" id="get-dataset">
-<h1>Get Dataset<a class="headerlink" href="#get-dataset" title="Permalink to this headline">#</a></h1>
+<section id="get-dataset">
+<h2>Get Dataset<a class="headerlink" href="#get-dataset" title="Permalink to this headline">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">dataset_url</span><span class="o">=</span><span class="s2">&quot;https://raw.githubusercontent.com/08-Ahlaqul-Karimah/galihcoba/main/covid_19_india.csv&quot;</span>
@@ -487,7 +490,7 @@ d(1,2), d(1,3), d(1,4) dari data tersebut</p></li>
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-4fb2e7a7-132d-4e11-880d-08f22de0c7c6">
+  <div id="df-5db864ba-dfb4-476f-9c4a-73a38819569b">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -654,7 +657,7 @@ d(1,2), d(1,3), d(1,4) dari data tersebut</p></li>
 </table>
 <p>18110 rows × 8 columns</p>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-4fb2e7a7-132d-4e11-880d-08f22de0c7c6')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-5db864ba-dfb4-476f-9c4a-73a38819569b')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
 
@@ -705,12 +708,12 @@ d(1,2), d(1,3), d(1,4) dari data tersebut</p></li>
 
       <script>
         const buttonEl =
-          document.querySelector('#df-4fb2e7a7-132d-4e11-880d-08f22de0c7c6 button.colab-df-convert');
+          document.querySelector('#df-5db864ba-dfb4-476f-9c4a-73a38819569b button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-4fb2e7a7-132d-4e11-880d-08f22de0c7c6');
+          const element = document.querySelector('#df-5db864ba-dfb4-476f-9c4a-73a38819569b');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -732,8 +735,8 @@ d(1,2), d(1,3), d(1,4) dari data tersebut</p></li>
 </div></div>
 </div>
 </section>
-<section class="tex2jax_ignore mathjax_ignore" id="mencari-dismilarity-data-nominal">
-<h1>Mencari Dismilarity data nominal<a class="headerlink" href="#mencari-dismilarity-data-nominal" title="Permalink to this headline">#</a></h1>
+<section id="mencari-dismilarity-data-nominal">
+<h2>Mencari Dismilarity data nominal<a class="headerlink" href="#mencari-dismilarity-data-nominal" title="Permalink to this headline">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">diss</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">):</span>
@@ -767,7 +770,7 @@ d(1,2), d(1,3), d(1,4) dari data tersebut</p></li>
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-139c1be0-0aad-44b0-9af1-b4f4419aad88">
+  <div id="df-96e8037b-1bd0-45bb-97a9-df92b0ebf8f2">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -844,7 +847,7 @@ d(1,2), d(1,3), d(1,4) dari data tersebut</p></li>
   </tbody>
 </table>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-139c1be0-0aad-44b0-9af1-b4f4419aad88')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-96e8037b-1bd0-45bb-97a9-df92b0ebf8f2')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
 
@@ -895,12 +898,12 @@ d(1,2), d(1,3), d(1,4) dari data tersebut</p></li>
 
       <script>
         const buttonEl =
-          document.querySelector('#df-139c1be0-0aad-44b0-9af1-b4f4419aad88 button.colab-df-convert');
+          document.querySelector('#df-96e8037b-1bd0-45bb-97a9-df92b0ebf8f2 button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-139c1be0-0aad-44b0-9af1-b4f4419aad88');
+          const element = document.querySelector('#df-96e8037b-1bd0-45bb-97a9-df92b0ebf8f2');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -973,8 +976,8 @@ Name: Deaths, Length: 18110, dtype: float64
 </div>
 </div>
 </section>
-<section class="tex2jax_ignore mathjax_ignore" id="menghitung-jarak-data-numeric-dengan-cara-euclidean">
-<h1>Menghitung jarak data Numeric dengan cara Euclidean<a class="headerlink" href="#menghitung-jarak-data-numeric-dengan-cara-euclidean" title="Permalink to this headline">#</a></h1>
+<section id="menghitung-jarak-data-numeric-dengan-cara-euclidean">
+<h2>Menghitung jarak data Numeric dengan cara Euclidean<a class="headerlink" href="#menghitung-jarak-data-numeric-dengan-cara-euclidean" title="Permalink to this headline">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">num_p</span><span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="p">,</span><span class="n">c</span><span class="p">):</span>
@@ -987,8 +990,8 @@ Name: Deaths, Length: 18110, dtype: float64
 </div>
 </div>
 </section>
-<section class="tex2jax_ignore mathjax_ignore" id="manhattan-distance">
-<h1>Manhattan distance<a class="headerlink" href="#manhattan-distance" title="Permalink to this headline">#</a></h1>
+<section id="manhattan-distance">
+<h2>Manhattan distance<a class="headerlink" href="#manhattan-distance" title="Permalink to this headline">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">num_p</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">2</span><span class="p">))</span>
@@ -1005,6 +1008,7 @@ Name: Deaths, Length: 18110, dtype: float64
 </div>
 </div>
 </div>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -1044,7 +1048,7 @@ Name: Deaths, Length: 18110, dtype: float64
     <a class='right-next' id="next-link" href="notebooks2.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Tugas 2</p>
+        <p class="prev-next-title">Tugas 2 Deskritisasi</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>
