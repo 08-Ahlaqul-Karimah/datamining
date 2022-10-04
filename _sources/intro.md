@@ -4,6 +4,7 @@ Data mining adalah proses pengumpulan dan pengolahan data yang bertujuan untuk m
 Proses pengumpulan dan ekstraksi informasi tersebut dapat dilakukan menggunakan perangkat lunak dengan bantuan perhitungan statistika, matematika, ataupun teknologi Artificial Intelligence (AI). 
 Data mining sering disebut juga Knowledge Discovery in Database (KDD).
 
+TUGAS DATA MINING
 
 ```{tableofcontents}
 ```
