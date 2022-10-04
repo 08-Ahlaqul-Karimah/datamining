@@ -6,5 +6,5 @@ Proses pengumpulan dan ekstraksi informasi tersebut dapat dilakukan menggunakan 
 matematika, ataupun teknologi Artificial Intelligence (AI). 
 Data mining sering disebut juga Knowledge Discovery in Database (KDD).
 
-'''{Table Of Contents}
-'''
+```{Table Of Contents}
+```
