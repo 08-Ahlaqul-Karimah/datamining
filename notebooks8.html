@@ -365,6 +365,11 @@ title="Print to PDF"
     <nav id="bd-toc-nav" aria-label="Page">
         <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#ensamble-learning">
+   Ensamble Learning
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#bagging">
    Bagging
   </a>
@@ -389,6 +394,11 @@ title="Print to PDF"
                         <nav aria-label="Page">
                             <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#ensamble-learning">
+   Ensamble Learning
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#bagging">
    Bagging
   </a>
@@ -405,6 +415,8 @@ title="Print to PDF"
                 
   <section class="tex2jax_ignore mathjax_ignore" id="ensemble-learning-tugas-8">
 <h1>Ensemble Learning (Tugas 8)<a class="headerlink" href="#ensemble-learning-tugas-8" title="Permalink to this headline">#</a></h1>
+<section id="ensamble-learning">
+<h2>Ensamble Learning<a class="headerlink" href="#ensamble-learning" title="Permalink to this headline">#</a></h2>
 <p>Ensemble learning adalah paradigma pembelajaran mesin di mana banyak pelajar dilatih untuk memecahkan masalah yang sama. Berbeda dengan pendekatan pembelajaran mesin biasa yang mencoba mempelajari satu hipotesis dari data pelatihan, metode ansambel mencoba membangun serangkaian hipotesis dan menggabungkannya untuk digunakan.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -433,7 +445,7 @@ title="Print to PDF"
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-bb79a31f-5a7c-4b45-99bd-25e513b3f25e">
+  <div id="df-a45690cb-db71-4324-8353-a83ba977fb77">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -601,7 +613,7 @@ title="Print to PDF"
 </table>
 <p>5 rows × 785 columns</p>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-bb79a31f-5a7c-4b45-99bd-25e513b3f25e')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-a45690cb-db71-4324-8353-a83ba977fb77')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
 
@@ -652,12 +664,12 @@ title="Print to PDF"
 
       <script>
         const buttonEl =
-          document.querySelector('#df-bb79a31f-5a7c-4b45-99bd-25e513b3f25e button.colab-df-convert');
+          document.querySelector('#df-a45690cb-db71-4324-8353-a83ba977fb77 button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-bb79a31f-5a7c-4b45-99bd-25e513b3f25e');
+          const element = document.querySelector('#df-a45690cb-db71-4324-8353-a83ba977fb77');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -686,7 +698,7 @@ title="Print to PDF"
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-05334fc2-22a7-43e8-a2f6-18ab3302e3ed">
+  <div id="df-4b75aa96-8a73-4812-8fd9-dd9a074ec4ef">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -926,7 +938,7 @@ title="Print to PDF"
 </table>
 <p>8 rows × 785 columns</p>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-05334fc2-22a7-43e8-a2f6-18ab3302e3ed')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-4b75aa96-8a73-4812-8fd9-dd9a074ec4ef')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
 
@@ -977,12 +989,12 @@ title="Print to PDF"
 
       <script>
         const buttonEl =
-          document.querySelector('#df-05334fc2-22a7-43e8-a2f6-18ab3302e3ed button.colab-df-convert');
+          document.querySelector('#df-4b75aa96-8a73-4812-8fd9-dd9a074ec4ef button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-05334fc2-22a7-43e8-a2f6-18ab3302e3ed');
+          const element = document.querySelector('#df-4b75aa96-8a73-4812-8fd9-dd9a074ec4ef');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -1017,29 +1029,6 @@ title="Print to PDF"
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">xtr</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">iloc</span><span class="p">[:,</span><span class="mi">1</span><span class="p">:]</span>
-<span class="n">ytr</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">iloc</span><span class="p">[:,</span><span class="mi">0</span><span class="p">]</span>
-
-<span class="n">xtst</span> <span class="o">=</span> <span class="n">test</span><span class="o">.</span><span class="n">iloc</span><span class="p">[:,</span><span class="mi">1</span><span class="p">:]</span>
-<span class="n">ytst</span> <span class="o">=</span> <span class="n">test</span><span class="o">.</span><span class="n">iloc</span><span class="p">[:,</span><span class="mi">0</span><span class="p">]</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="ne">NameError</span>Traceback (most recent call last)
-<span class="o">&lt;</span><span class="n">ipython</span><span class="o">-</span><span class="nb">input</span><span class="o">-</span><span class="mi">6</span><span class="o">-</span><span class="mf">2e1</span><span class="n">e3c186fd6</span><span class="o">&gt;</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
-<span class="g g-Whitespace">      </span><span class="mi">2</span> <span class="n">ytr</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">iloc</span><span class="p">[:,</span><span class="mi">0</span><span class="p">]</span>
-<span class="g g-Whitespace">      </span><span class="mi">3</span> 
-<span class="ne">----&gt; </span><span class="mi">4</span> <span class="n">xtst</span> <span class="o">=</span> <span class="n">test</span><span class="o">.</span><span class="n">iloc</span><span class="p">[:,</span><span class="mi">1</span><span class="p">:]</span>
-<span class="g g-Whitespace">      </span><span class="mi">5</span> <span class="n">ytst</span> <span class="o">=</span> <span class="n">test</span><span class="o">.</span><span class="n">iloc</span><span class="p">[:,</span><span class="mi">0</span><span class="p">]</span>
-
-<span class="ne">NameError</span>: name &#39;test&#39; is not defined
-</pre></div>
-</div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#decision tree</span>
 <span class="n">classifier</span> <span class="o">=</span> <span class="n">DecisionTreeClassifier</span><span class="p">()</span>
 <span class="n">classifier</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">xtr</span><span class="p">,</span><span class="n">ytr</span><span class="p">)</span>
@@ -1047,7 +1036,13 @@ title="Print to PDF"
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>DecisionTreeClassifier()
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="ne">NameError</span>Traceback (most recent call last)
+<span class="o">&lt;</span><span class="n">ipython</span><span class="o">-</span><span class="nb">input</span><span class="o">-</span><span class="mi">6</span><span class="o">-</span><span class="n">f90c68b8741e</span><span class="o">&gt;</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+<span class="g g-Whitespace">      </span><span class="mi">1</span> <span class="c1">#decision tree</span>
+<span class="g g-Whitespace">      </span><span class="mi">2</span> <span class="n">classifier</span> <span class="o">=</span> <span class="n">DecisionTreeClassifier</span><span class="p">()</span>
+<span class="ne">----&gt; </span><span class="mi">3</span> <span class="n">classifier</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">xtr</span><span class="p">,</span><span class="n">ytr</span><span class="p">)</span>
+
+<span class="ne">NameError</span>: name &#39;xtr&#39; is not defined
 </pre></div>
 </div>
 </div>
@@ -1106,6 +1101,7 @@ title="Print to PDF"
 </div>
 </div>
 </div>
+</section>
 <section id="bagging">
 <h2>Bagging<a class="headerlink" href="#bagging" title="Permalink to this headline">#</a></h2>
 <p>Bagging adalah singkatan dari “bootstrap aggregating”. Ini adalah meta-algoritma, yang mengambil M subsampel (dengan penggantian) dari dataset awal dan melatih model prediktif pada subsampel tersebut. Model akhir diperoleh dengan merata-ratakan model “bootstrapped” dan biasanya menghasilkan hasil yang lebih baik.</p>
