@@ -445,7 +445,7 @@ title="Print to PDF"
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-a45690cb-db71-4324-8353-a83ba977fb77">
+  <div id="df-393d91d0-d1bf-4f7f-8345-77645ad6d656">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -613,7 +613,7 @@ title="Print to PDF"
 </table>
 <p>5 rows × 785 columns</p>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-a45690cb-db71-4324-8353-a83ba977fb77')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-393d91d0-d1bf-4f7f-8345-77645ad6d656')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
 
@@ -664,12 +664,12 @@ title="Print to PDF"
 
       <script>
         const buttonEl =
-          document.querySelector('#df-a45690cb-db71-4324-8353-a83ba977fb77 button.colab-df-convert');
+          document.querySelector('#df-393d91d0-d1bf-4f7f-8345-77645ad6d656 button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-a45690cb-db71-4324-8353-a83ba977fb77');
+          const element = document.querySelector('#df-393d91d0-d1bf-4f7f-8345-77645ad6d656');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -698,7 +698,7 @@ title="Print to PDF"
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-4b75aa96-8a73-4812-8fd9-dd9a074ec4ef">
+  <div id="df-403f616d-b5b9-419b-a767-78d6de08f79c">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -938,7 +938,7 @@ title="Print to PDF"
 </table>
 <p>8 rows × 785 columns</p>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-4b75aa96-8a73-4812-8fd9-dd9a074ec4ef')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-403f616d-b5b9-419b-a767-78d6de08f79c')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
 
@@ -989,12 +989,12 @@ title="Print to PDF"
 
       <script>
         const buttonEl =
-          document.querySelector('#df-4b75aa96-8a73-4812-8fd9-dd9a074ec4ef button.colab-df-convert');
+          document.querySelector('#df-403f616d-b5b9-419b-a767-78d6de08f79c button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-4b75aa96-8a73-4812-8fd9-dd9a074ec4ef');
+          const element = document.querySelector('#df-403f616d-b5b9-419b-a767-78d6de08f79c');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -1029,6 +1029,29 @@ title="Print to PDF"
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">xtr</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">iloc</span><span class="p">[:,</span><span class="mi">1</span><span class="p">:]</span>
+<span class="n">ytr</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">iloc</span><span class="p">[:,</span><span class="mi">0</span><span class="p">]</span>
+
+<span class="n">xtst</span> <span class="o">=</span> <span class="n">test</span><span class="o">.</span><span class="n">iloc</span><span class="p">[:,</span><span class="mi">1</span><span class="p">:]</span>
+<span class="n">ytst</span> <span class="o">=</span> <span class="n">test</span><span class="o">.</span><span class="n">iloc</span><span class="p">[:,</span><span class="mi">0</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="ne">NameError</span>Traceback (most recent call last)
+<span class="o">&lt;</span><span class="n">ipython</span><span class="o">-</span><span class="nb">input</span><span class="o">-</span><span class="mi">6</span><span class="o">-</span><span class="mf">2e1</span><span class="n">e3c186fd6</span><span class="o">&gt;</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+<span class="g g-Whitespace">      </span><span class="mi">2</span> <span class="n">ytr</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">iloc</span><span class="p">[:,</span><span class="mi">0</span><span class="p">]</span>
+<span class="g g-Whitespace">      </span><span class="mi">3</span> 
+<span class="ne">----&gt; </span><span class="mi">4</span> <span class="n">xtst</span> <span class="o">=</span> <span class="n">test</span><span class="o">.</span><span class="n">iloc</span><span class="p">[:,</span><span class="mi">1</span><span class="p">:]</span>
+<span class="g g-Whitespace">      </span><span class="mi">5</span> <span class="n">ytst</span> <span class="o">=</span> <span class="n">test</span><span class="o">.</span><span class="n">iloc</span><span class="p">[:,</span><span class="mi">0</span><span class="p">]</span>
+
+<span class="ne">NameError</span>: name &#39;test&#39; is not defined
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#decision tree</span>
 <span class="n">classifier</span> <span class="o">=</span> <span class="n">DecisionTreeClassifier</span><span class="p">()</span>
 <span class="n">classifier</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">xtr</span><span class="p">,</span><span class="n">ytr</span><span class="p">)</span>
@@ -1036,13 +1059,7 @@ title="Print to PDF"
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="ne">NameError</span>Traceback (most recent call last)
-<span class="o">&lt;</span><span class="n">ipython</span><span class="o">-</span><span class="nb">input</span><span class="o">-</span><span class="mi">6</span><span class="o">-</span><span class="n">f90c68b8741e</span><span class="o">&gt;</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
-<span class="g g-Whitespace">      </span><span class="mi">1</span> <span class="c1">#decision tree</span>
-<span class="g g-Whitespace">      </span><span class="mi">2</span> <span class="n">classifier</span> <span class="o">=</span> <span class="n">DecisionTreeClassifier</span><span class="p">()</span>
-<span class="ne">----&gt; </span><span class="mi">3</span> <span class="n">classifier</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">xtr</span><span class="p">,</span><span class="n">ytr</span><span class="p">)</span>
-
-<span class="ne">NameError</span>: name &#39;xtr&#39; is not defined
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>DecisionTreeClassifier()
 </pre></div>
 </div>
 </div>
@@ -1096,7 +1113,7 @@ title="Print to PDF"
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0.9989
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0.9992
 </pre></div>
 </div>
 </div>
@@ -1129,7 +1146,7 @@ title="Print to PDF"
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0.9919
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0.9917
 </pre></div>
 </div>
 </div>
@@ -1141,7 +1158,7 @@ title="Print to PDF"
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0.9919
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0.9917
 </pre></div>
 </div>
 </div>
