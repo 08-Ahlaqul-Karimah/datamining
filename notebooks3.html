@@ -50,6 +50,8 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="Naive Bayes Gaussian (Tugas 4)" href="notebooks4.html" />
@@ -366,9 +368,26 @@ title="Print to PDF"
     <nav id="bd-toc-nav" aria-label="Page">
         <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#konsep-algoritma">
-   konsep/algoritma
+  <a class="reference internal nav-link" href="#k-nearest-neighbor">
+   K-Nearest Neighbor
   </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#menghitung-jarak-dengan-euclidean-distance">
+     Menghitung jarak dengan Euclidean Distance
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#secara-umum-formula-euclidean-distance-pada-1-dimensional-space-adalah-sebagai-berikut">
+     Secara umum, formula Euclidean distance pada 1-dimensional space adalah sebagai berikut.
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#jika-ada-lebih-dari-satu-kita-dapat-menjumlahkannya-seperti-di-bawah-ini">
+     Jika ada lebih dari satu, kita dapat menjumlahkannya seperti di bawah ini.
+    </a>
+   </li>
+  </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#reading-in-the-training-data">
@@ -425,9 +444,26 @@ title="Print to PDF"
                         <nav aria-label="Page">
                             <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#konsep-algoritma">
-   konsep/algoritma
+  <a class="reference internal nav-link" href="#k-nearest-neighbor">
+   K-Nearest Neighbor
   </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#menghitung-jarak-dengan-euclidean-distance">
+     Menghitung jarak dengan Euclidean Distance
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#secara-umum-formula-euclidean-distance-pada-1-dimensional-space-adalah-sebagai-berikut">
+     Secara umum, formula Euclidean distance pada 1-dimensional space adalah sebagai berikut.
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#jika-ada-lebih-dari-satu-kita-dapat-menjumlahkannya-seperti-di-bawah-ini">
+     Jika ada lebih dari satu, kita dapat menjumlahkannya seperti di bawah ini.
+    </a>
+   </li>
+  </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#reading-in-the-training-data">
@@ -476,8 +512,30 @@ title="Print to PDF"
                 
   <section class="tex2jax_ignore mathjax_ignore" id="knn-tugas-3">
 <h1>KNN (Tugas 3)<a class="headerlink" href="#knn-tugas-3" title="Permalink to this headline">#</a></h1>
-<section id="konsep-algoritma">
-<h2>konsep/algoritma<a class="headerlink" href="#konsep-algoritma" title="Permalink to this headline">#</a></h2>
+<section id="k-nearest-neighbor">
+<h2>K-Nearest Neighbor<a class="headerlink" href="#k-nearest-neighbor" title="Permalink to this headline">#</a></h2>
+<p>algoritma KNN merupakan algoritma klasifikasi yang bekerja dengan mengambil sejumlah K data terdekat (tetangganya) sebagai acuan untuk menentukan kelas dari data baru. Algoritma ini mengklasifikasikan data berdasarkan similarity atau kemiripan atau kedekatannya terhadap data lainnya.</p>
+<section id="menghitung-jarak-dengan-euclidean-distance">
+<h3>Menghitung jarak dengan Euclidean Distance<a class="headerlink" href="#menghitung-jarak-dengan-euclidean-distance" title="Permalink to this headline">#</a></h3>
+<p>Untuk menghitung jarak antara dua titik pada algoritma KNN digunakan metode Euclidean Distance yang dapat digunakan pada 1-dimensional space, 2-dimensional space, atau multi-dimensional space.</p>
+<p>1-dimensional space berarti perhitungan jarak hanya menggunakan satu variabel bebas (independent variable),</p>
+<p>2-dimensional-space berarti ada dua variabel bebas, dan multi-dimensional space berarti ada lebih dari dua variabel.</p>
+</section>
+<section id="secara-umum-formula-euclidean-distance-pada-1-dimensional-space-adalah-sebagai-berikut">
+<h3>Secara umum, formula Euclidean distance pada 1-dimensional space adalah sebagai berikut.<a class="headerlink" href="#secara-umum-formula-euclidean-distance-pada-1-dimensional-space-adalah-sebagai-berikut" title="Permalink to this headline">#</a></h3>
+<div class="math notranslate nohighlight">
+\[
+dis \left ( x_{1},x_{2}\right )=\sqrt{\sum_{i=0}^{n_{}}\left (x_{1i}-x_{2i} \right )^{2}}
+\]</div>
+<p>Formula di atas dapat digunakan jika jumlah independent variable hanya ada satu variabel. Lalu, bagaimana jika ada banyak variabel yang digunakan?</p>
+</section>
+<section id="jika-ada-lebih-dari-satu-kita-dapat-menjumlahkannya-seperti-di-bawah-ini">
+<h3>Jika ada lebih dari satu, kita dapat menjumlahkannya seperti di bawah ini.<a class="headerlink" href="#jika-ada-lebih-dari-satu-kita-dapat-menjumlahkannya-seperti-di-bawah-ini" title="Permalink to this headline">#</a></h3>
+<div class="math notranslate nohighlight">
+\[
+dis =\sqrt{\sum_{i=0}^{n_{}}\left (x_{1i}-x_{2i} \right )^{2}+\left (y_{1i}-y_{2i} \right )^{2}+...}
+\]</div>
+</section>
 </section>
 <section id="reading-in-the-training-data">
 <h2>Reading in the training data<a class="headerlink" href="#reading-in-the-training-data" title="Permalink to this headline">#</a></h2>
@@ -494,7 +552,7 @@ title="Print to PDF"
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-9857ad37-8616-4eaf-be8d-0533c5348ee9">
+  <div id="df-8a027e7e-9d0e-4d0b-a322-58b000df7886">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -565,7 +623,7 @@ title="Print to PDF"
   </tbody>
 </table>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-9857ad37-8616-4eaf-be8d-0533c5348ee9')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-8a027e7e-9d0e-4d0b-a322-58b000df7886')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
 
@@ -616,12 +674,12 @@ title="Print to PDF"
 
       <script>
         const buttonEl =
-          document.querySelector('#df-9857ad37-8616-4eaf-be8d-0533c5348ee9 button.colab-df-convert');
+          document.querySelector('#df-8a027e7e-9d0e-4d0b-a322-58b000df7886 button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-9857ad37-8616-4eaf-be8d-0533c5348ee9');
+          const element = document.querySelector('#df-8a027e7e-9d0e-4d0b-a322-58b000df7886');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -668,7 +726,7 @@ title="Print to PDF"
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-64c99dc9-b507-4385-8998-e75939a5abb3">
+  <div id="df-28648046-0bf7-4aab-8999-0ba72496c17a">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -733,7 +791,7 @@ title="Print to PDF"
   </tbody>
 </table>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-64c99dc9-b507-4385-8998-e75939a5abb3')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-28648046-0bf7-4aab-8999-0ba72496c17a')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
 
@@ -784,12 +842,12 @@ title="Print to PDF"
 
       <script>
         const buttonEl =
-          document.querySelector('#df-64c99dc9-b507-4385-8998-e75939a5abb3 button.colab-df-convert');
+          document.querySelector('#df-28648046-0bf7-4aab-8999-0ba72496c17a button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-64c99dc9-b507-4385-8998-e75939a5abb3');
+          const element = document.querySelector('#df-28648046-0bf7-4aab-8999-0ba72496c17a');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
