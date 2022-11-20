@@ -448,15 +448,18 @@ title="Print to PDF"
 <p>Meski memiliki banyak kelebihan, namun bukan berarti ini tidak memiliki kekurangan. Pohon keputusan ini mungkin tumpang tindih, terutama jika kelas dan kriteria yang digunakan sangat sering dapat meningkatkan waktu pengambilan keputusan sesuai dengan kapasitas memori yang diperlukan.</p>
 <section id="algoritma-secara-umum">
 <h2>Algoritma secara umum:<a class="headerlink" href="#algoritma-secara-umum" title="Permalink to this headline">#</a></h2>
-<p>-Buat Cabang untuk setiap nilai -Pilih atribut sebagai root</p>
-<p>-Ulangi prosedur untuk setiap cabang sampai semua kasus di cabang memiliki kelas yang sama.</p>
-<p>-Memilih atribut berdasarkan nilai “gain” tertinggi dari atribut-atribut yang ada.</p>
+<ul class="simple">
+<li><p>Buat Cabang untuk setiap nilai -Pilih atribut sebagai root</p></li>
+<li><p>Ulangi prosedur untuk setiap cabang sampai semua kasus di cabang memiliki kelas yang sama.</p></li>
+<li><p>Memilih atribut berdasarkan nilai “gain” tertinggi dari atribut-atribut yang ada.</p></li>
+</ul>
 <section id="perhitungan-gain">
 <h3>Perhitungan Gain<a class="headerlink" href="#perhitungan-gain" title="Permalink to this headline">#</a></h3>
 <div class="math notranslate nohighlight">
 \[
 Gain(S,A)=Entropy(S)-\sum_{i=1}^{n}*Entropy(Si)
 \]</div>
+<p><strong>keterangan</strong></p>
 <ul class="simple">
 <li><p>S : himpunan</p></li>
 <li><p>A : atribut</p></li>
@@ -510,7 +513,7 @@ Entropy(S)=\sum_{i=1}^{n}-Pi*log_{2}Pi
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-040f1ce4-7cf5-490b-9002-72961a3aa8a1">
+  <div id="df-0f2b5917-b4ee-4719-a1e3-91f0fb86c89a">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -581,7 +584,7 @@ Entropy(S)=\sum_{i=1}^{n}-Pi*log_{2}Pi
   </tbody>
 </table>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-040f1ce4-7cf5-490b-9002-72961a3aa8a1')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-0f2b5917-b4ee-4719-a1e3-91f0fb86c89a')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
 
@@ -632,12 +635,12 @@ Entropy(S)=\sum_{i=1}^{n}-Pi*log_{2}Pi
 
       <script>
         const buttonEl =
-          document.querySelector('#df-040f1ce4-7cf5-490b-9002-72961a3aa8a1 button.colab-df-convert');
+          document.querySelector('#df-0f2b5917-b4ee-4719-a1e3-91f0fb86c89a button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-040f1ce4-7cf5-490b-9002-72961a3aa8a1');
+          const element = document.querySelector('#df-0f2b5917-b4ee-4719-a1e3-91f0fb86c89a');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -668,7 +671,7 @@ Entropy(S)=\sum_{i=1}^{n}-Pi*log_{2}Pi
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-13abadb5-cd93-40dd-ae60-b7f14e25a8e8">
+  <div id="df-1e9ccf15-7fd7-4e4d-b42f-a2e95cef4a87">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -739,7 +742,7 @@ Entropy(S)=\sum_{i=1}^{n}-Pi*log_{2}Pi
   </tbody>
 </table>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-13abadb5-cd93-40dd-ae60-b7f14e25a8e8')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-1e9ccf15-7fd7-4e4d-b42f-a2e95cef4a87')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
 
@@ -790,12 +793,12 @@ Entropy(S)=\sum_{i=1}^{n}-Pi*log_{2}Pi
 
       <script>
         const buttonEl =
-          document.querySelector('#df-13abadb5-cd93-40dd-ae60-b7f14e25a8e8 button.colab-df-convert');
+          document.querySelector('#df-1e9ccf15-7fd7-4e4d-b42f-a2e95cef4a87 button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-13abadb5-cd93-40dd-ae60-b7f14e25a8e8');
+          const element = document.querySelector('#df-1e9ccf15-7fd7-4e4d-b42f-a2e95cef4a87');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
